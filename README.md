@@ -1,59 +1,160 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+*🌱 Horta Automática SESI*
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Irrigação inteligente, monitoramento em tempo real e tecnologia a serviço da sustentabilidade.
 
-## About Laravel
+=========================================================================
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+*📖 Sobre o projeto*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A Horta Automática SESI é um sistema web que integra uma horta física automatizada a uma plataforma digital, permitindo acompanhar e controlar o cultivo de forma simples e acessível.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+O projeto nasceu da necessidade de cuidar de hortas mesmo sem estar presente todos os dias, reduzindo o desperdício de água e aumentando a eficiência do cultivo. A plataforma reúne a apresentação do projeto, o acesso de usuários e o painel de acompanhamento da horta.
 
-## Learning Laravel
+<div align="center"> <img src="https://github.com/user-attachments/assets/5c54f8ee-2a82-48c8-a5e7-42056698b300" alt="Foto do site oficial" width="80%"></div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+=========================================================================
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*✨ Funcionalidades*
 
-## Laravel Sponsors
+🏠 Landing page apresentando o projeto e seus objetivos <br/>
+🔐 Cadastro e login de usuários <br/>
+🌿 Painel da horta com acompanhamento do cultivo <br/>
+⚡ Circuitos e componentes eletrônicos utilizados <br/>
+🖼️ Galeria de imagens do projeto <br/>
+📚 Saiba mais com informações e conteúdo educativo <br/>
+📱 Layout responsivo para diferentes tamanhos de tela <br/>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+=========================================================================
 
-### Premium Partners
+*📸 Screenshots*
+Landing Page
+<div align="center"> <img src="https://github.com/user-attachments/assets/5c54f8ee-2a82-48c8-a5e7-42056698b300" alt="Landing Page" width="90%"> </div>
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Login e Cadastro
+<div align="center"> 
+    <img src="https://github.com/user-attachments/assets/cc963d83-7fe3-4e79-af35-56e8e46345f9" alt="Tela de Login" width="45%"> 
+    <img src="https://github.com/user-attachments/assets/d846fa0b-873d-4f10-a5e3-968d59ea4be7" alt="Tela de Cadastro" width="45%"> 
+</div>
 
-## Contributing
+Painel da Horta
+<div align="center"> <img src="https://github.com/user-attachments/assets/a1b11776-6851-47a1-ace5-a72344c86705" alt="Painel da Horta" width="90%"> </div>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Projetos e Circuitos
+<div align="center"> 
+    <img  src="https://github.com/user-attachments/assets/011ad96e-7a15-4d4e-9b09-370df27e4802" alt="Tela de Projetos" width="30%">
+    <img   src="https://github.com/user-attachments/assets/26807009-5578-47e4-8f2c-6734da516fb1" alt="PopUp aberto" width="30%"> 
+    <img src="https://github.com/user-attachments/assets/36223441-c241-46e2-8daa-480d813d4c87" alt="Tela de Circuitos" width="30%"> 
+</div>
 
-## Code of Conduct
+=========================================================================
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+*🛠️ Tecnologias*
 
-## Security Vulnerabilities
+Back-end	PHP + Laravel	Rotas, regras de negócio, autenticação e banco de dados <br/>
+Ponte	Inertia.js	Liga o Laravel ao React sem precisar de uma API separada <br/>
+Front-end	React	Interface e componentes <br/>
+Build	Vite	Compilação e servidor de desenvolvimento rápido <br/>
+Banco de dados	MySQL	Armazenamento dos dados <br/>
+Hardware	Arduino / sensores	Automação da horta física <br/>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+=========================================================================
 
-## License
+*🚀 Instalação*
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Pré-requisitos <br/>
+
+Antes de começar, você precisa ter instalado:
+
+PHP 8.2 ou superior
+Composer
+Node.js 18 ou superior (com npm)
+Um banco de dados (MySQL, ou SQLite que já vem pronto)
+Git
+<br/>
+*Passo a passo*
+<br/>
+1. Clone o repositório
+
+bash
+git clone https://github.com/caetano991/Horta-Automatica-Sesi.git
+cd Horta-Automatica-Sesi
+
+Se o projeto estiver dentro de uma subpasta (ex: Horta-back-front), entre nela antes de continuar:
+
+bash
+cd Horta-back-front
+<br/><br/>
+2. Instale as dependências do PHP
+
+bash
+composer install
+<br/><br/>
+3. Instale as dependências do JavaScript
+
+bash
+npm install
+<br/><br/>
+4. Configure o ambiente
+<br/>
+bash
+cp .env.example .env
+php artisan key:generate
+
+Abra o arquivo .env e configure o banco de dados:
+<br/>
+.env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=horta
+DB_USERNAME=root
+DB_PASSWORD=
+<br/><br/>
+5. Crie as tabelas do banco
+
+bash
+php artisan migrate
+<br/><br/>
+6. Rode o projeto (use dois terminais ao mesmo tempo)
+<br/>
+Terminal 1, servidor do Laravel:
+<br/>
+bash
+php artisan serve
+<br/>
+Terminal 2, servidor do Vite:
+<br/>
+bash
+npm run dev
+<br/><br/>
+7. Acesse no navegador
+<br/>
+http://127.0.0.1:8000
+<br/>
+⚠️ Acesse sempre pela URL do php artisan serve. O endereço do Vite (localhost:5173) serve apenas para entregar os arquivos JS/CSS ao Laravel.
+</details>
+
+=========================================================================
+
+*🗺️ Roadmap* <br/>
+✅ Estrutura do front-end em React <br/>
+✅ Integração Laravel + Inertia + React <br/>
+✅ Autenticação de usuários (login e cadastro) <br/>
+✅ Persistência dos dados no banco <br/> 
+ Integração com os sensores da horta <br/>
+ Controle da irrigação pelo painel <br/>
+ Gráficos de umidade e temperatura <br/>
+ Notificações e alertas <br/>
+ Deploy em produção <br/>
+
+=========================================================================
+
+*📄 Licença*
+
+Distribuído sob a licença Miguel Caetano.
+
+<div align="center">
+
+Feito com 💚 e muito café por quem acredita que tecnologia e natureza podem andar juntas.
+
+</div>
