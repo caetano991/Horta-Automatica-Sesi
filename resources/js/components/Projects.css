@@ -1,0 +1,283 @@
+/* =========================
+   PÁGINA DE PROJETOS
+========================= */
+
+.horta-projects {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 7rem 7% 4rem;
+
+    box-sizing: border-box;
+
+    background-color: #F9F8F3;
+    color: #183C2A;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.projects-title {
+    margin-bottom: 2rem;
+}
+
+.projects-title .title {
+    margin: 0 0 0.4rem;
+
+    color: #183C2A;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.projects-title .subtitle {
+    margin: 0;
+
+    color: #52645A;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* =========================
+   GRID DOS PROJETOS
+========================= */
+
+.projects-items {
+    width: 100%;
+
+    display: grid;
+
+    /* esquerda = cards
+       direita = carrossel */
+    grid-template-columns: 1.5fr 0.9fr;
+
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem 2rem;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.project-item {
+    width: 100%;
+    min-height: 120px;
+
+    box-sizing: border-box;
+
+    padding: 1.2rem 1.5rem;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #DDE4DF;
+
+    border-radius: 16px;
+
+    display: grid;
+
+    /*
+       Ícone | conteúdo | botão
+    */
+    grid-template-columns: 60px 1fr auto;
+
+    grid-template-rows: auto 1fr;
+
+    column-gap: 1rem;
+
+    align-items: center;
+
+    box-shadow: 0 3px 10px rgba(38, 56, 43, 0.04);
+
+    transition: 0.25s ease;
+}
+
+
+/* efeito hover */
+
+.project-item:hover {
+    transform: translateY(-2px);
+
+    border-color: #B7CBBE;
+
+    box-shadow: 0 7px 18px rgba(38, 56, 43, 0.08);
+}
+
+
+/* =========================
+   ÍCONES
+========================= */
+
+.project-item > svg {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 0.65rem;
+
+    box-sizing: border-box;
+
+    color: #1D6543;
+
+    background-color: #F1F5EF;
+
+    border-radius: 12px;
+}
+
+
+/* =========================
+   TÍTULO DO CARD
+========================= */
+
+.item-title {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: 0 0 0.25rem;
+
+    color: #183C2A;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.project-item p {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin: 0;
+
+    max-width: 500px;
+
+    color: #5C6961;
+
+    font-size: 0.85rem;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.project-item button {
+    grid-column: 3;
+    grid-row: 1 / 3;
+
+    justify-self: end;
+    align-self: center;
+
+    padding: 0.7rem 1rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #1D6543;
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.project-item button:hover {
+    background-color: #144A30;
+}
+
+
+.projects-items > :nth-child(4) {
+    grid-column: 2;
+    grid-row: 1 / 4;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .projects-items {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+    }
+
+    .projects-items > :nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+
+        min-height: 400px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .horta-projects {
+        padding: 5rem 1.2rem 2rem;
+    }
+
+    .projects-title .title {
+        font-size: 2rem;
+    }
+
+    .projects-title .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .project-item {
+        grid-template-columns: 50px 1fr;
+
+        padding: 1rem;
+    }
+
+    .project-item > svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    .item-title {
+        font-size: 0.9rem;
+    }
+
+    .project-item p {
+        grid-column: 1 / 3;
+
+        margin-top: 0.5rem;
+
+        font-size: 0.8rem;
+    }
+
+    .project-item button {
+        grid-column: 1 / 3;
+        grid-row: 3;
+
+        justify-self: start;
+
+        margin-top: 0.7rem;
+    }
+}

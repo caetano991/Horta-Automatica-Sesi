@@ -1,0 +1,264 @@
+
+/* =========================
+   PÁGINA DO CIRCUITO
+========================= */
+
+.horta-circuits {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 7rem 7% 4rem;
+
+    box-sizing: border-box;
+
+    background-color: #F9F8F3;
+    color: #183C2A;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.circuits-title {
+    margin-bottom: 1.5rem;
+}
+
+.circuits-title .title {
+    margin: 0 0 0.4rem;
+
+    color: #183C2A;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.circuits-title .subtitle {
+    margin-bottom: 30px;
+
+    color: #52645A;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* =========================
+   IMAGEM DO CIRCUITO
+========================= */
+
+.circuits-image {
+    display: block;
+
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    max-height: 350px;
+
+    margin: 1rem auto 2rem;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* =========================
+   SEÇÃO DE ETAPAS
+========================= */
+
+.circuits-section {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.section-title {
+    margin: 0 0 1rem;
+
+    color: #183C2A;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   GRID DOS CARDS
+========================= */
+
+.section-items {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 1rem;
+
+    width: 100%;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   CARDS INDIVIDUAIS
+========================= */
+
+.section-item {
+    width: 100%;
+    min-width: 0;
+    min-height: 120px;
+
+    padding: 1rem 1.2rem;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #DDE4DF;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(38, 56, 43, 0.04);
+
+    transition: 0.25s ease;
+}
+
+.section-item:hover {
+    transform: translateY(-2px);
+
+    border-color: #B7CBBE;
+
+    box-shadow: 0 7px 18px rgba(38, 56, 43, 0.08);
+}
+
+
+/* =========================
+   NÚMERO E TÍTULO DA ETAPA
+========================= */
+
+.item-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0.3rem;
+
+    margin: 0 0 0.7rem;
+
+    color: #183C2A;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.item-title span {
+    color: #1D6543;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.item-description {
+    margin: 0;
+
+    color: #5C6961;
+
+    font-size: 0.85rem;
+    line-height: 1.5;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================
+   RESPONSIVIDADE - TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    .horta-circuits {
+        padding: 7rem 5% 3rem;
+    }
+
+    .circuits-title .title {
+        font-size: 2.2rem;
+    }
+
+    .circuits-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .circuits-image {
+        max-height: 320px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVIDADE - CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .horta-circuits {
+        padding: 5rem 1.2rem 2rem;
+    }
+
+    .circuits-title {
+        margin-bottom: 1rem;
+    }
+
+    .circuits-title .title {
+        font-size: 2rem;
+    }
+
+    .circuits-title .subtitle {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .circuits-image {
+        max-height: 240px;
+
+        margin: 1rem auto 1.5rem;
+    }
+
+    .circuits-section {
+        margin-top: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .section-items {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .section-item {
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .item-title {
+        font-size: 0.95rem;
+    }
+
+    .item-title span {
+        font-size: 1.4rem;
+    }
+
+    .item-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}

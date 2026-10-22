@@ -1,0 +1,421 @@
+/* =========================
+   FOOTER PRINCIPAL
+========================= */
+
+.horta-footer {
+    width: 100%;
+    padding: 3.5rem 7% 1.5rem;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #164b36,
+        #0e3b2c
+    );
+
+    color: #F9F8F3;
+    font-family: inherit;
+}
+
+
+/* =========================
+   CONTEÚDO DO FOOTER
+========================= */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+
+    gap: 3rem;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+}
+
+
+/* =========================
+   IDENTIDADE VISUAL
+========================= */
+
+.footer-about {
+    max-width: 350px;
+}
+
+.footer-institution-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 190px;
+    height: 75px;
+
+    margin-bottom: 1.2rem;
+}
+
+.footer-logo-image {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: left center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    margin-bottom: 1rem;
+}
+
+.footer-logo-icon {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    color: #F9F8F3;
+    stroke-width: 1.6;
+}
+
+.footer-logo h2 {
+    margin: 0;
+
+    color: #F9F8F3;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.footer-description {
+    margin: 0;
+    max-width: 300px;
+
+    color: #E0E9E1;
+
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   TÍTULOS DAS COLUNAS
+========================= */
+
+.footer-title {
+    margin: 0 0 1.2rem;
+
+    color: #F9F8F3;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAVEGAÇÃO
+========================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0.5rem;
+
+    width: fit-content;
+    max-width: 100%;
+
+    color: #E0E9E1;
+
+    font-size: 0.88rem;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-links a svg {
+    width: 14px;
+    height: 14px;
+
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+    transform: translateX(3px);
+}
+
+.footer-links a:hover svg {
+    opacity: 1;
+}
+
+
+/* =========================
+   DESENVOLVEDORES
+========================= */
+
+.footer-developer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-developer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+}
+
+.footer-developer-name {
+    color: #E0E9E1;
+    font-size: 0.88rem;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 22px;
+
+    color: #E0E9E1;
+    font-size: 16px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   ORIENTADORES
+========================= */
+
+.footer-mentors {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 1.3rem 0;
+
+    border-top: 1px solid rgba(249, 248, 243, 0.16);
+}
+
+.footer-mentors .footer-title {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer-mentor-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-mentor {
+    color: #E0E9E1;
+    font-size: 0.88rem;
+}
+
+
+/* =========================
+   DIVISÃO INFERIOR
+========================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(249, 248, 243, 0.25);
+}
+
+.footer-copyright,
+.footer-credit {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+
+    margin: 0;
+
+    color: #D4E1D7;
+
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+.footer-heart {
+    width: 14px;
+    height: 14px;
+
+    color: #F9F8F3;
+    fill: #F9F8F3;
+
+    stroke-width: 1.5;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+    .horta-footer {
+        padding: 3rem 5% 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem 2rem;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+        max-width: 450px;
+    }
+
+    .footer-description {
+        max-width: 400px;
+    }
+
+    .footer-mentors {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+    .horta-footer {
+        padding: 2.5rem 1.2rem 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+
+    .footer-institution-logo {
+        width: 165px;
+        height: 65px;
+    }
+
+    .footer-logo h2 {
+        font-size: 1.25rem;
+    }
+
+    .footer-description {
+        font-size: 0.88rem;
+    }
+
+    .footer-title {
+        margin-bottom: 1rem;
+        font-size: 0.98rem;
+    }
+
+    .footer-links {
+        gap: 0.9rem;
+    }
+
+    .footer-links a,
+    .footer-developer-name,
+    .footer-mentor {
+        font-size: 0.85rem;
+    }
+
+    .footer-developer-list {
+        gap: 0.9rem;
+    }
+
+    .footer-mentors {
+        padding: 1.2rem 0;
+    }
+
+    .footer-mentor-list {
+        gap: 1rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.2rem;
+        gap: 0.8rem;
+    }
+
+    .footer-copyright,
+    .footer-credit {
+        font-size: 0.74rem;
+    }
+}

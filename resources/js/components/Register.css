@@ -1,0 +1,217 @@
+/* Fundo da página */
+.horta-register {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f5f8f4;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+/* Card do cadastro */
+.horta-register .container {
+    width: 100%;
+    max-width: 430px;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 28px 32px 22px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo */
+.horta-register .logo {
+    width: 150px;
+    height: 65px;
+
+    margin: 0 auto 12px;
+
+    background-image: url('/logo-horta.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Título */
+.horta-register h1 {
+    margin: 0 0 6px;
+
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #164d3b;
+}
+
+/* Subtítulo */
+.horta-register h1::after {
+    content: "Preencha os dados para se cadastrar";
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    color: #777;
+}
+
+/* Formulário */
+.horta-register form {
+    width: 100%;
+}
+
+/* Grupo dos inputs */
+.horta-register .input-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-top: 20px;
+}
+
+/* Cada campo */
+.horta-register .input-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+/* Labels */
+.horta-register .input-box label {
+    margin-bottom: 6px;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    color: #555;
+}
+
+/* Inputs */
+.horta-register .input-box input {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+
+    outline: none;
+
+    background-color: #fff;
+
+    font-size: 11px;
+    color: #333;
+
+    transition: 0.2s ease;
+}
+
+/* Placeholder */
+.horta-register .input-box input::placeholder {
+    color: #b5b5b5;
+}
+
+/* Quando clicar no input */
+.horta-register .input-box input:focus {
+    border-color: #176044;
+
+    box-shadow: 0 0 0 2px rgba(23, 96, 68, 0.08);
+}
+
+/* Botão */
+.horta-register .register-button {
+    width: 100%;
+    height: 38px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #075c3c;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+/* Hover do botão */
+.horta-register .register-button:hover {
+    background-color: #064b32;
+}
+
+/* Área inferior */
+.horta-register .register-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 14px;
+}
+
+/* Texto "Já tem uma conta?" */
+.horta-register .register-more p {
+    margin: 0;
+
+    font-size: 10px;
+
+    color: #888;
+}
+
+/* Link */
+.horta-register .register-link {
+    font-size: 10px;
+
+    color: #075c3c;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.horta-register .register-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+@media (max-width: 500px) {
+    .horta-register {
+        padding: 20px 15px;
+    }
+
+    .horta-register .container {
+        padding: 25px 22px 20px;
+    }
+
+    .horta-register h1 {
+        font-size: 20px;
+    }
+}

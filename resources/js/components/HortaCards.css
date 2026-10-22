@@ -1,0 +1,145 @@
+.horta-card {
+    width: 100%;
+    max-width: 100%;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #DDE2DC;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.card-img {
+    width: 100%;
+    height: 200px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.card-title {
+    margin: 0;
+
+    padding: 16px 20px 8px;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #26382B;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 4px 20px 20px;
+}
+
+
+.card-item {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 15px;
+
+    color: #526257;
+
+    white-space: nowrap;
+}
+
+
+/* Ícones */
+
+.card-item svg {
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    color: #6C9A70;
+
+    stroke-width: 2;
+}
+
+
+/* Texto antes do valor */
+
+.card-item p {
+    margin: 0;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.horta-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(58, 90, 64, 0.12);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .horta-card {
+        max-width: none;
+    }
+
+    .card-img {
+        height: 140px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .horta-card {
+        max-width: 100%;
+    }
+
+    .card-img {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-item {
+        font-size: 12px;
+    }
+}

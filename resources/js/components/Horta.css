@@ -1,0 +1,155 @@
+/* =========================
+   SEÇÃO DA HORTA
+========================= */
+
+.horta-section {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 7rem 10% 1rem;
+
+    background-color: #F9F8F3;
+    color: #26382B;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.title {
+    margin-bottom: 2rem;
+    margin: 0 0 0.4rem;
+
+    color: #183C2A;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+
+    color: #52645A;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* =========================
+   GRID DOS CARDS
+========================= */
+
+.section-cards {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    justify-items: stretch;
+
+    margin-bottom: 2.5rem;
+}
+
+/* =========================
+   CAIXA FINAL
+========================= */
+
+.horta-box {
+    width: 40%;
+    min-height: 60px;
+
+    padding: 0.8rem 1.5rem;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+    gap: 1rem;
+
+    background-color: #EEF3E8;
+
+    border-radius: 0.7rem;
+
+    color: #52705A;
+}
+
+.horta-box svg {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    color: #527A5C;
+}
+
+.horta-box p {
+    margin: 0;
+
+    max-width: 400px;
+
+    font-size: 0.85rem;
+    line-height: 1.4;
+
+    color: #52705A;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .horta-section {
+        padding: 6rem 4% 3rem;
+    }
+
+    .section-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Celular */
+@media (max-width: 600px) {
+
+    .horta-section {
+        padding: 5.5rem 1.25rem 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .section-cards {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .plant-card img {
+        height: 150px;
+    }
+
+    .horta-box {
+        padding: 1rem;
+
+        gap: 0.7rem;
+    }
+
+    .horta-box p {
+        font-size: 0.75rem;
+    }
+}
